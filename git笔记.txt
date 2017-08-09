@@ -1,0 +1,9 @@
+Git上传时：
+步骤1.
+git add .(上传全部)  git add 文件名 （上传指定文件）
+步骤2.上传必须写注释
+git commit -m '注释'
+步骤3.
+git remote add origin （你的git地址url） 
+步骤4.
+git push -u origin master  (开始上传，自动完成)
