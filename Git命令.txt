@@ -1,0 +1,56 @@
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+git init
+
+git status  //查看状态
+
+git add . //准备上传合并
+
+git commit -m '注释'
+
+git push origin master //上传合并
+
+git remote add origin [url] //添加服务器git 仓库地址
+
+git push -u origin master //首次上传
+
+git pull origin master //下载合并  分支改成 dev aa bbb ccc
+
+git pull origin dev
+
+
+git clone [url]  //从服务器首次克隆
+git pull origin master
+
+
+//首次上传
+git init
+git status
+git add .
+git commit -m "first commit"
+git remote add origin https://url地址
+git push -u origin master
+
+git reset --hard 版本回退
+
+git reset HEAD  命令用于取消缓存已缓存的内容。
+
+
+注意 用HEAD表示当前版本
+先 多下载合并 git pull origin master 
+后 多上传合并 git push -u origin master 
+每次写完后需要上传 多上传合并  
+
+
+解决冲突
+如果张三修改了共同一个文件的同一行代码
+  李四也修改了共同一个文件的同一行代码
+张三上传了 成功
+李四上传 就会报错 
+如何解决冲突 
+思路 让李四先下载合并 然后手动修改文件  在上传 
+如果 李四下载合并失败
+那么李四需要版本回退  然后在下载合并 在修改文件 在上传
+
+
+
